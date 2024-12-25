@@ -117,7 +117,6 @@ const Dashboard = () => {
 
   return (
     <div className="min-h-screen bg-white">
-      {/* Mobile View */}
       <div className="md:hidden">
         <div className="flex justify-between items-center p-4 border-b">
           <div className="flex items-center gap-2">
@@ -168,12 +167,8 @@ const Dashboard = () => {
         </div>
       </div>
 
-      {/* Desktop View */}
       <div className="hidden md:flex h-screen">
-        {/* Sidebar Component */}
         <Sidebar username={username} />
-
-        {/* Main Content */}
         <div className="flex-1">
           <div className="p-6">
             <div className="flex items-center justify-between mb-6">

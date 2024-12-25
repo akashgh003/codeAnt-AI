@@ -27,13 +27,11 @@ const SignInPage = ({ onLogin }) => {
         </div>
 
         <div className="relative z-10" style={{ position: 'relative' }}>
-          {/* Main container with exact positioning */}
           <div style={{ 
             position: 'absolute',
             top: '140px',
             left: '60px'
           }}>
-            {/* Stats Card */}
             <div className="bg-white rounded-3xl" 
                  style={{ 
                    position: 'absolute',
@@ -69,7 +67,6 @@ const SignInPage = ({ onLogin }) => {
               </div>
             </div>
 
-            {/* Issues Fixed Card */}
             <div 
               className="bg-white rounded-3xl relative" 
               style={{ 
@@ -81,16 +78,13 @@ const SignInPage = ({ onLogin }) => {
                 top: '207px',
                 boxShadow: '0px 8px 32px rgba(0, 0, 0, 0.12)',
                 backgroundColor: '#FFFFFF'
-              }}
-            >
-              {/* Pie SVG Icon */}
+              }}>
               <div
                 style={{
                   position: 'absolute',
                   left: '24px',
                   top: '15px',
-                }}
-              >
+                }}>
                 <img 
                   src="/pie.svg"
                   alt="Statistics"
@@ -101,7 +95,6 @@ const SignInPage = ({ onLogin }) => {
                 />
               </div>
 
-              {/* "Issues Fixed" Text */}
               <span 
                 className="text-gray-500"
                 style={{
@@ -110,12 +103,10 @@ const SignInPage = ({ onLogin }) => {
                   top: '65px',
                   fontSize: '14px',
                   lineHeight: '20px'
-                }}
-              >
+                }}>
                 Issues Fixed
               </span>
 
-              {/* "500K+" Number */}
               <div 
                 className="font-semibold"
                 style={{
@@ -125,12 +116,10 @@ const SignInPage = ({ onLogin }) => {
                   fontSize: '36px',
                   lineHeight: '44px',
                   fontWeight: '600'
-                }}
-              >
+                }}>
                 500K+
               </div>
 
-              {/* Stats Row */}
               <div
                 style={{
                   position: 'absolute',
@@ -139,8 +128,7 @@ const SignInPage = ({ onLogin }) => {
                   display: 'flex',
                   alignItems: 'center',
                   gap: '4px'
-                }}
-              >
+                }}>
                 <div style={{ position: 'relative' }}>
                 <div style={{ position: 'relative' }}>
                   <span 
@@ -151,8 +139,7 @@ const SignInPage = ({ onLogin }) => {
                       top: '-130px',
                       fontSize: '14px',
                       lineHeight: '20px'
-                    }}
-                  >
+                    }}>
                     ↑14%
                   </span>
                   <span 
@@ -164,8 +151,7 @@ const SignInPage = ({ onLogin }) => {
                       fontSize: '14px',
                       lineHeight: '20px',
                       whiteSpace: 'nowrap'
-                    }}
-                  >
+                    }}>
                     This week
                   </span>
                 </div>
@@ -191,16 +177,14 @@ const SignInPage = ({ onLogin }) => {
               className={`flex-1 px-4 py-2.5 rounded-lg font-medium transition-colors ${
                 selectedOption === 'saas' ? 'bg-blue-500 text-white' : 'bg-gray-100 text-gray-600'
               }`}
-              onClick={() => setSelectedOption('saas')}
-            >
+              onClick={() => setSelectedOption('saas')}>
               SAAS
             </button>
             <button 
               className={`flex-1 px-4 py-2.5 rounded-lg font-medium transition-colors ${
                 selectedOption === 'self-hosted' ? 'bg-blue-500 text-white' : 'bg-gray-100 text-gray-600'
               }`}
-              onClick={() => setSelectedOption('self-hosted')}
-            >
+              onClick={() => setSelectedOption('self-hosted')}>
               Self Hosted
             </button>
           </div>
@@ -210,15 +194,13 @@ const SignInPage = ({ onLogin }) => {
               <>
                 <button 
                   onClick={handleAuth}
-                  className="w-full flex items-center justify-center gap-2 bg-white border border-gray-200 rounded-lg px-4 py-2.5 hover:bg-gray-50"
-                >
+                  className="w-full flex items-center justify-center gap-2 bg-white border border-gray-200 rounded-lg px-4 py-2.5 hover:bg-gray-50">
                   <img src="/gitlab.svg" alt="GitLab" className="w-5 h-5" />
                   Self Hosted GitLab
                 </button>
                 <button 
                   onClick={handleAuth}
-                  className="w-full flex items-center justify-center gap-2 bg-white border border-gray-200 rounded-lg px-4 py-2.5 hover:bg-gray-50"
-                >
+                  className="w-full flex items-center justify-center gap-2 bg-white border border-gray-200 rounded-lg px-4 py-2.5 hover:bg-gray-50">
                   <svg className="w-5 h-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
                     <path d="M15 7a2 2 0 012 2m4 0a6 6 0 01-7.743 5.743L11 17H9v2H7v2H4a1 1 0 01-1-1v-2.586a1 1 0 01.293-.707l5.964-5.964A6 6 0 1121 9z" />
                   </svg>
